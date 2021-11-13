@@ -11,7 +11,7 @@ export default function BlogPost(props) {
             { props.data.map((post) => {
                 return (
                     <Link href={`/posts/${post.slug}`} key={post.id}>
-                        <a className="block hover:bg-blue-500 hover:text-white border p-4 rounded-lg mb-5" key={post.id}>
+                        <a className="block hover:bg-blue-500 hover:text-white border p-4 rounded-lg mb-5">
                             {post.title}
                         </a>
                     </Link>
